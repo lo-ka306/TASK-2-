@@ -95,12 +95,13 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
+			-o-transition: none !important;
+}
 
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: #3a3939;
 		line-height: 1.65em;
 		font-size: 15pt;
 	}
@@ -108,7 +109,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: #a40404;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -139,14 +140,16 @@ input, select, textarea {
 		color: #666;
 		text-decoration: none;
 		border-bottom: solid 1px #ddd;
-	}
+		-o-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+}
 
 		a strong {
 			-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		}
+			-o-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+}
 
 		a:hover {
 			color: #ed786a;
@@ -1487,7 +1490,8 @@ input, select, textarea {
 		transition: opacity 0.25s ease-in-out;
 		display: inline-block;
 		border: solid 6px #ebebeb !important;
-	}
+		-o-transition: opacity 0.25s ease-in-out;
+}
 
 		.image:hover {
 			opacity: 0.9;
@@ -1506,7 +1510,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 3.5em 0;
+			margin: 0 0 1.5em 0;
 		}
 
 		.image.left {
@@ -1680,7 +1684,8 @@ input, select, textarea {
 		border-radius: 4px;
 		line-height: 1.25em;
 		padding: 0.75em 1em 0.75em 1em;
-	}
+		-o-transition: background-color 0.25s ease-in-out;
+}
 
 		form input[type="text"]:focus,
 		form input[type="email"]:focus,
@@ -1769,7 +1774,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #ed786a;
+		background: #7e1004;
 		color: #fff !important;
 		text-transform: uppercase;
 		border-radius: 4px;
@@ -1782,7 +1787,8 @@ input, select, textarea {
 		font-size: 0.85em;
 		letter-spacing: 2px;
 		padding: 0.85em 2.75em 0.85em 2.75em;
-	}
+		-o-transition: all 0.25s ease-in-out;
+}
 
 		input[type="button"].icon:before,
 		input[type="submit"].icon:before,
@@ -1854,7 +1860,11 @@ input, select, textarea {
 		letter-spacing: 2px;
 		padding: 0.25em 1em 0.25em 1em;
 		margin: 0 0 2.5em 0;
-	}
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+}
 
 /* Icons */
 
@@ -1917,7 +1927,7 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #ed786a;
+			color: #8d1104;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -1969,7 +1979,7 @@ input, select, textarea {
 				#nav > ul > li > a:before {
 					display: inline-block;
 					background: #878787;
-					color: #e4e4e4;
+					color: #880a0a;
 					width: 2.25em;
 					font-size: 0.8em;
 					height: 2.25em;
@@ -1983,7 +1993,11 @@ input, select, textarea {
 					-o-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 					-ms-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 					transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
-				}
+					-webkit-border-radius: 2.25em;
+					-moz-border-radius: 2.25em;
+					-ms-border-radius: 2.25em;
+					-o-border-radius: 2.25em;
+}
 
 				#nav > ul > li > a > span {
 					-moz-transition: color 0.25s ease-in-out;
@@ -2075,7 +2089,8 @@ input, select, textarea {
 				-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				color: #ed786a;
-			}
+				-o-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+}
 
 /* Features */
 
@@ -2100,12 +2115,12 @@ input, select, textarea {
 	#banner {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
+		background: #ae1e1e;
 		color: #fff;
 		text-align: center;
 		border-top: solid 2px #e5e5e5;
 		border-bottom: solid 2px #e5e5e5;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
+		box-shadow: inset 0px -8px 0px 0px #aa0d0d, inset 0px 8px 0px 0px #aa0d0d;
 		position: relative;
 		text-transform: uppercase;
 		background: url("../../images/banner.jpg");
@@ -2152,7 +2167,8 @@ input, select, textarea {
 				-ms-transform: scaleX(-1);
 				transform: scaleX(-1);
 				right: 0;
-			}
+				-o-transform: scaleX(-1);
+}
 
 /* Main */
 
@@ -2364,12 +2380,13 @@ input, select, textarea {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
+				-moz-transition: transform 0.5s ease;
+				-webkit-transition: transform 0.5s ease;
+				-ms-transition: transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
-			}
+				-o-transition: transform 0.5s ease;
+}
 
 			#titleBar {
 				-moz-backface-visibility: hidden;
@@ -2444,9 +2461,9 @@ input, select, textarea {
 				-webkit-transform: translateX(-275px);
 				-ms-transform: translateX(-275px);
 				transform: translateX(-275px);
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
+				-moz-transition:;
+				-webkit-transition:;
+				-ms-transition:;
 				transition: transform 0.5s ease;
 				display: block;
 				height: 100%;
@@ -2463,7 +2480,8 @@ input, select, textarea {
 				color: #888;
 				letter-spacing: 2px;
 				font-size: 0.85em;
-			}
+				-o-transition:;
+}
 
 				#navPanel .link {
 					display: block;
@@ -2519,21 +2537,24 @@ input, select, textarea {
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
-			}
+				-o-transform: translateX(275px);
+}
 
 			body.navPanel-visible #titleBar {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
-			}
+				-o-transform: translateX(275px);
+}
 
 			body.navPanel-visible #navPanel {
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
-			}
+				-o-transform: translateX(0);
+}
 
 		/* Sidebar */
 
